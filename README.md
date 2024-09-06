@@ -3,13 +3,13 @@ marp: true
 theme: uncover
 paginate: true
 #backgroundColor: #fff
-#backgroundImage: url('https://marp.app/assets/hero-background.svg')
+backgroundImage: radial-gradient(circle 100vh at bottom 100px right 100px in hsl, rgb(161, 186, 182) 0%, transparent 100%)
 ---
 
 <!-- _paginate: skip -->
 
 ![bg right:33% vertical 70%](https://scverse.org/img/icons/scverse_bw_logo.svg)
-![bg right:33% vertical 60%](https://api.qrserver.com/v1/create-qr-code/?format=svg&data=https://github.com/scverse/cookiecutter-scverse)
+![bg right:33% vertical 60%](https://api.qrserver.com/v1/create-qr-code/?format=svg&bgcolor=161-186-182&data=https://scverse.org/cookiecutter-scverse-presentation/)
 
 # scverse cookiecutter template
 
@@ -72,7 +72,6 @@ Tell VS Code to use this interpreter:
 ---
 
 # VS Code
-
 
 
 
