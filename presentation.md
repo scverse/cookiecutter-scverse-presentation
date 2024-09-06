@@ -28,13 +28,13 @@ cookiecutter-scverse](https://github.com/scverse/cookiecutter-scverse)
   - `code`: [code.visualstudio.com/download](https://code.visualstudio.com/download)
   - `hatch`: [hatch.pypa.io/latest/install](https://hatch.pypa.io/latest/install/)
   - `git`: [github.com/git-guides/install-git](https://github.com/git-guides/install-git)
-  - `uvx`: [docs.astral.sh/uv/getting-started/installation](https://docs.astral.sh/uv/getting-started/installation/)
+  - `uv`: [docs.astral.sh/uv/getting-started/installation](https://docs.astral.sh/uv/getting-started/installation/)
     or `pipx`: [pipx.pypa.io/stable/installation](https://pipx.pypa.io/stable/installation/)
 
-* Install using a package manager, `pipx`, or `uvx`:
+* Install using a package manager, `pipx`, or `uv`:
 
   ```bash
-  pipx install cruft pre-commit
+  pipx/uv install cruft pre-commit
   ```
 
 ---
@@ -51,7 +51,32 @@ $ code myproj
 <img style="margin-bottom: -450px" src=./imgs/new-proj.png>
 
 ---
+
+# environment management
+
+Hatch [tutorials/environment/basic-usage](https://hatch.pypa.io/latest/tutorials/environment/basic-usage/)
+
+```console
+$ hatch run [env:]command [...args]
+$ hatch test [...args]
+$ hatch env remove <name> # or `hatch env prune` for all
+$ hatch find hatch-test
+~/.local/share/hatch/env/virtual/myproj/FsejNibV/hatch-test.py3.12
+[…]
+```
+
+Tell VS Code to use this interpreter:
+
+<kbd>⌘</kbd>|<kbd>^</kbd>+<kbd>⇑</kbd>+<kbd>P</kbd> → “Python: Select Interpreter”
+
 ---
+
+# VS Code
+
+
+
+
+
 ---
 
 # Committing code
