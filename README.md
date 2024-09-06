@@ -3,21 +3,24 @@ marp: true
 theme: uncover
 paginate: true
 #backgroundColor: #fff
-#backgroundImage: url('https://marp.app/assets/hero-background.svg')
+backgroundImage: radial-gradient(circle 100vh at bottom 100px right 100px in hsl, rgb(161, 186, 182) 0%, transparent 100%)
+style: |
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
 ---
 
 <!-- _paginate: skip -->
 
 ![bg right:33% vertical 70%](https://scverse.org/img/icons/scverse_bw_logo.svg)
-![bg right:33% vertical 60%](https://api.qrserver.com/v1/create-qr-code/?format=svg&data=https://github.com/scverse/cookiecutter-scverse)
+![bg right:33% vertical 60%](https://api.qrserver.com/v1/create-qr-code/?format=svg&bgcolor=161-186-182&data=https://scverse.org/cookiecutter-scverse-presentation/)
 
-# scverse cookiecutter template
+# [scverse cookiecutter template](https://cookiecutter-scverse-instance.readthedocs.io/en/latest/template_usage.html)
 
-[github.com/scverse/
-cookiecutter-scverse](https://github.com/scverse/cookiecutter-scverse)
-
-<!-- Only QR code: follow the tutorial there if you access this presentation offline -->
-<!-- Ask us if you follow live -->
+Follow along: [scverse.org/
+cookiecutter-scverse-presentation](https://scverse.org/cookiecutter-scverse-presentation/)
 
 ---
 
@@ -54,10 +57,10 @@ $ code myproj
 
 # environment management
 
-Hatch [tutorials/environment/basic-usage](https://hatch.pypa.io/latest/tutorials/environment/basic-usage/)
+Hatch envs [basic usage](https://hatch.pypa.io/latest/tutorials/environment/basic-usage/):
 
 ```console
-$ hatch run [env:]command [...args]
+$ hatch run [env:]command [...args] # e.g. `… docs:build -T`
 $ hatch test [...args]
 $ hatch env remove <name> # or `hatch env prune` for all
 $ hatch find hatch-test
@@ -65,21 +68,90 @@ $ hatch find hatch-test
 […]
 ```
 
-Tell VS Code to use this interpreter:
+Tell VS Code:
 
-<kbd>⌘</kbd>|<kbd>^</kbd>+<kbd>⇑</kbd>+<kbd>P</kbd> → “Python: Select Interpreter”
-
----
-
-# VS Code
-
-
-
+<kbd>⌘</kbd>|<kbd>^</kbd>+<kbd>⇑</kbd>+<kbd>P</kbd> → <kbd>Python: Select Interpreter</kbd>
 
 ---
 
-# Committing code
+# running tests
+
+```console
+$ hatch test --help
+[…]
+Options:
+  -r, --randomize
+  -p, --parallel
+  -c, --cover
+  -a, --all
+  -py, --python=X.Y
+  -i, --include=VAR=VAL
+  -x, --exclude=VAR=VAL
+  -s, --show
+…otherwise same as `pytest`
+```
+
+![bg right:40% contain](https://code.visualstudio.com/assets/docs/python/testing/test-explorer.png)
+
+---
+
+# building docs
+
+```console
+$ hatch run docs:build
+$ hatch run docs:open
+$ hatch run docs:clean
+```
+
+See `pyproject.toml`:
+
+```toml
+[tools.hatch.envs.docs]
+scripts.build = "..."
+...
+```
+
+![bg right:40% contain](./img/docs.png)
+
+---
+
+# formatting and linting
+
+VS Code:
+
+```json
+{
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": { ... },
+  }, ...
+}
+```
+
+CLI: `pre-commit` (or `hatch run pre-commit`)
+
+<!-- Installing pre-commit globally is preferred -->
+
+```console
+$ pre-commit install # `git commit` hook
+$ pre-commit run --all-files
+```
+
+---
+
+# committing code
 
 - Use PRs, don’t push to `main`
 - Set up [pre-commit.ci](https://pre-commit.ci/), [codecov.io](https://codecov.io/) on
   [github.com/&lt;you>/&lt;yourpackage>/settings/installations](#)
+
+![](./img/checks.png)
+
+---
+
+# ReadTheDocs
+
+PR previews:
+
+<img src="./img/rtd-pr-warning.png" style="box-shadow: 0 .2rem .5rem rgba(0,0,0,.1)">

@@ -3,5 +3,6 @@
         "marp-team.marp-vscode",
         "ninoseki.vscode-mogami",
         "biomejs.biome",
+        "github.vscode-pull-request-github",
     ],
 }
