@@ -4,6 +4,12 @@ theme: uncover
 paginate: true
 #backgroundColor: #fff
 backgroundImage: radial-gradient(circle 100vh at bottom 100px right 100px in hsl, rgb(161, 186, 182) 0%, transparent 100%)
+style: |
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
 ---
 
 <!-- _paginate: skip -->
@@ -11,13 +17,10 @@ backgroundImage: radial-gradient(circle 100vh at bottom 100px right 100px in hsl
 ![bg right:33% vertical 70%](https://scverse.org/img/icons/scverse_bw_logo.svg)
 ![bg right:33% vertical 60%](https://api.qrserver.com/v1/create-qr-code/?format=svg&bgcolor=161-186-182&data=https://scverse.org/cookiecutter-scverse-presentation/)
 
-# scverse cookiecutter template
+# [scverse cookiecutter template](https://cookiecutter-scverse-instance.readthedocs.io/en/latest/template_usage.html)
 
-[github.com/scverse/
-cookiecutter-scverse](https://github.com/scverse/cookiecutter-scverse)
-
-<!-- Only QR code: follow the tutorial there if you access this presentation offline -->
-<!-- Ask us if you follow live -->
+Follow along: [scverse.org/
+cookiecutter-scverse-presentation](https://scverse.org/cookiecutter-scverse-presentation/)
 
 ---
 
@@ -54,10 +57,10 @@ $ code myproj
 
 # environment management
 
-Hatch [tutorials/environment/basic-usage](https://hatch.pypa.io/latest/tutorials/environment/basic-usage/)
+Hatch envs [basic usage](https://hatch.pypa.io/latest/tutorials/environment/basic-usage/):
 
 ```console
-$ hatch run [env:]command [...args]
+$ hatch run [env:]command [...args] # e.g. `… docs:build -T`
 $ hatch test [...args]
 $ hatch env remove <name> # or `hatch env prune` for all
 $ hatch find hatch-test
@@ -65,15 +68,41 @@ $ hatch find hatch-test
 […]
 ```
 
-Tell VS Code to use this interpreter:
+Tell VS Code:
 
-<kbd>⌘</kbd>|<kbd>^</kbd>+<kbd>⇑</kbd>+<kbd>P</kbd> → “Python: Select Interpreter”
+<kbd>⌘</kbd>|<kbd>^</kbd>+<kbd>⇑</kbd>+<kbd>P</kbd> → <kbd>Python: Select Interpreter</kbd>
 
 ---
 
-# VS Code
+# running tests
 
+```console
+$ hatch test --help
+[…]
+Options:
+  -r, --randomize
+  -p, --parallel
+  -c, --cover
+  -a, --all
+  -py, --python=X.Y
+  -i, --include=VAR=VAL
+  -x, --exclude=VAR=VAL
+  -s, --show
+```
 
+![bg right:40% contain](https://code.visualstudio.com/assets/docs/python/testing/test-explorer.png)
+
+---
+
+# building docs
+
+```console
+$ hatch run docs:build
+$ hatch run docs:open
+$ hatch run docs:clean
+```
+
+![bg right:40% contain](./img/docs.png)
 
 ---
 
