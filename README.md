@@ -88,6 +88,7 @@ Options:
   -i, --include=VAR=VAL
   -x, --exclude=VAR=VAL
   -s, --show
+…otherwise same as `pytest`
 ```
 
 ![bg right:40% contain](https://code.visualstudio.com/assets/docs/python/testing/test-explorer.png)
@@ -100,6 +101,14 @@ Options:
 $ hatch run docs:build
 $ hatch run docs:open
 $ hatch run docs:clean
+```
+
+See `pyproject.toml`:
+
+```toml
+[tools.hatch.envs.docs]
+scripts.build = "..."
+...
 ```
 
 ![bg right:40% contain](./img/docs.png)
@@ -131,8 +140,18 @@ $ pre-commit run --all-files
 
 ---
 
-# Committing code
+# committing code
 
 - Use PRs, don’t push to `main`
 - Set up [pre-commit.ci](https://pre-commit.ci/), [codecov.io](https://codecov.io/) on
   [github.com/&lt;you>/&lt;yourpackage>/settings/installations](#)
+
+![](./img/checks.png)
+
+---
+
+# ReadTheDocs
+
+PR previews:
+
+<img src="./img/rtd-pr-warning.png" style="box-shadow: 0 .2rem .5rem rgba(0,0,0,.1)">
