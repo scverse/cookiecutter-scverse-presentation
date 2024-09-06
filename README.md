@@ -106,6 +106,31 @@ $ hatch run docs:clean
 
 ---
 
+# formatting and linting
+
+VS Code:
+
+```json
+{
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": { ... },
+  }, ...
+}
+```
+
+CLI: `pre-commit` (or `hatch run pre-commit`)
+
+<!-- Installing pre-commit globally is preferred -->
+
+```console
+$ pre-commit install # `git commit` hook
+$ pre-commit run --all-files
+```
+
+---
+
 # Committing code
 
 - Use PRs, don’t push to `main`
