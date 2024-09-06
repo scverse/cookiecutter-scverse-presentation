@@ -33,8 +33,8 @@ cookiecutter-scverse](https://github.com/scverse/cookiecutter-scverse)
 
 * Install using a package manager, `pipx`, or `uv`:
 
-  ```bash
-  pipx/uv install cruft pre-commit
+  ```console
+  $ pipx/uv install cruft pre-commit
   ```
 
 ---
@@ -48,7 +48,7 @@ $ cruft create https://github.com/scverse/cookiecutter-scverse
 $ code myproj
 ```
 
-<img style="margin-bottom: -450px" src=./imgs/new-proj.png>
+<img style="margin-bottom: -450px" src=./img/new-proj.png>
 
 ---
 
@@ -72,7 +72,6 @@ Tell VS Code to use this interpreter:
 ---
 
 # VS Code
-
 
 
 

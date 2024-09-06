@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "marp-team.marp-vscode",
+        "ninoseki.vscode-mogami",
+        "biomejs.biome",
+    ],
+}
