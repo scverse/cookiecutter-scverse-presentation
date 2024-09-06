@@ -36,7 +36,7 @@ jobs:
       - name: Marp Build (README.pdf)
         uses: docker://marpteam/marp-cli:v3.4.0
         with:
-          args: README.md --html --allow-local-files -o build/README.pdf
+          args: README.md --html --allow-local-files --pdf-outlines.headings -o build/README.pdf
         env:
           MARP_USER: root:root
 
