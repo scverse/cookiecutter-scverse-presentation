@@ -48,7 +48,7 @@ $ cruft create https://github.com/scverse/cookiecutter-scverse
 $ code myproj
 ```
 
-<img style="margin-bottom: -450px" src=./imgs/new-proj.png>
+<img style="margin-bottom: -450px" src=./img/new-proj.png>
 
 ---
 
