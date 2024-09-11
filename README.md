@@ -10,6 +10,9 @@ style: |
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
+  a:link code {
+    color: var(--color-highlight);
+  }
 ---
 
 <!-- _paginate: skip -->
@@ -17,10 +20,13 @@ style: |
 ![bg right:33% vertical 70%](https://scverse.org/img/icons/scverse_bw_logo.svg)
 ![bg right:33% vertical 60%](https://api.qrserver.com/v1/create-qr-code/?format=svg&bgcolor=161-186-182&data=https://scverse.org/cookiecutter-scverse-presentation/)
 
-# [scverse cookiecutter template](https://cookiecutter-scverse-instance.readthedocs.io/en/latest/template_usage.html)
+# [scverse cookiecutter template][template]
 
 Follow along: [scverse.org/
-cookiecutter-scverse-presentation](https://scverse.org/cookiecutter-scverse-presentation/)
+cookiecutter-scverse-presentation][pres]
+
+[template]: https://cookiecutter-scverse-instance.readthedocs.io/en/latest/template_usage.html
+[pres]: https://scverse.org/cookiecutter-scverse-presentation/
 
 ---
 
@@ -28,17 +34,23 @@ cookiecutter-scverse-presentation](https://scverse.org/cookiecutter-scverse-pres
 
 * Install using a package manager or installer:
 
-  - `code`: [code.visualstudio.com/download](https://code.visualstudio.com/download)
-  - `hatch`: [hatch.pypa.io/latest/install](https://hatch.pypa.io/latest/install/)
-  - `git`: [github.com/git-guides/install-git](https://github.com/git-guides/install-git)
-  - `uv`: [docs.astral.sh/uv/getting-started/installation](https://docs.astral.sh/uv/getting-started/installation/)
-    or `pipx`: [pipx.pypa.io/stable/installation](https://pipx.pypa.io/stable/installation/)
+  - [`code`][], [`hatch`][], & [`git`][]
+  - [`uv`][] or [`pipx`][]
 
 * Install using a package manager, `pipx`, or `uv`:
 
-  ```console
-  $ pipx/uv install cruft pre-commit
-  ```
+  - `cruft` & `pre-commit`
+
+    ```console
+    $ pipx install cruft pre-commit  # or
+    $ uv tool install cruft pre-commit
+    ```
+
+[`code`]: https://code.visualstudio.com/download
+[`hatch`]: https://hatch.pypa.io/latest/install/
+[`git`]: https://github.com/git-guides/install-git
+[`uv`]: https://docs.astral.sh/uv/getting-started/installation/
+[`pipx`]: https://pipx.pypa.io/stable/installation/
 
 ---
 
@@ -57,7 +69,7 @@ $ code myproj
 
 # environment management
 
-Hatch envs [basic usage](https://hatch.pypa.io/latest/tutorials/environment/basic-usage/):
+Hatch envs [basic usage][hatch envs]:
 
 ```console
 $ hatch run [env:]command [...args] # e.g. `… docs:build -T`
@@ -71,6 +83,8 @@ $ hatch find hatch-test
 Tell VS Code:
 
 <kbd>⌘</kbd>|<kbd>^</kbd>+<kbd>⇑</kbd>+<kbd>P</kbd> → <kbd>Python: Select Interpreter</kbd>
+
+[hatch envs]: https://hatch.pypa.io/latest/tutorials/environment/basic-usage/
 
 ---
 
@@ -142,16 +156,24 @@ $ pre-commit run --all-files
 
 # committing code
 
+<!-- No need to do this live, time should be mostly up here -->
+
 - Use PRs, don’t push to `main`
-- Set up [pre-commit.ci](https://pre-commit.ci/), [codecov.io](https://codecov.io/) on
-  [github.com/&lt;you>/&lt;yourpackage>/settings/installations](#)
+- Set up [pre-commit.ci][], [codecov.io][] on
+  github.com/&lt;you>/&lt;yourpackage>/settings/installations
 
 ![](./img/checks.png)
+
+[pre-commit.ci]: https://pre-commit.ci/
+[codecov.io]: https://codecov.io/
 
 ---
 
 # ReadTheDocs
 
-PR previews:
+- Set up [readthedocs.org][] and its [PR previews][]:
 
 <img src="./img/rtd-pr-warning.png" style="box-shadow: 0 .2rem .5rem rgba(0,0,0,.1)">
+
+[readthedocs.org]: https://docs.readthedocs.io/en/stable/intro/import-guide.html
+[PR previews]: https://docs.readthedocs.io/en/stable/guides/pull-requests.html
