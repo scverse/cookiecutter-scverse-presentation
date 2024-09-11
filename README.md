@@ -3,22 +3,27 @@ marp: true
 theme: uncover
 paginate: true
 #backgroundColor: #fff
-backgroundImage: radial-gradient(circle 100vh at bottom 100px right 100px in hsl, rgb(161, 186, 182) 0%, transparent 100%)
+backgroundImage: radial-gradient(circle 100vh at bottom 100px right 100px in hsl, var(--color-accent) 0%, transparent 100%)
 style: |
+  :root {
+    --color-highlight: #0097a7;
+    --color-accent: rgb(161, 186, 182);
+  }
+  a:any-link {
+    --color-foreground: var(--color-highlight);
+  }
   .columns {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
-  a:any-link {
-    --color-foreground: var(--color-highlight);
-  }
 ---
 
 <!-- _paginate: skip -->
+<!-- QR URL: https://api.qrserver.com/v1/create-qr-code/?format=svg&data=https://scverse.org/cookiecutter-scverse-presentation/ -->
 
-![bg right:33% vertical 70%](https://scverse.org/img/icons/scverse_bw_logo.svg)
-![bg right:33% vertical 60%](https://api.qrserver.com/v1/create-qr-code/?format=svg&bgcolor=161-186-182&data=https://scverse.org/cookiecutter-scverse-presentation/)
+![bg right:33% vertical 70%](./img/scverse-logo.svg)
+![bg right:33% vertical 60%](./img/qr-pres.svg)
 
 # [scverse cookiecutter template][template]
 
@@ -105,7 +110,7 @@ Options:
 …otherwise same as `pytest`
 ```
 
-![bg right:40% contain](https://code.visualstudio.com/assets/docs/python/testing/test-explorer.png)
+![bg right:40% contain](./img/test-explorer.png)
 
 ---
 
@@ -177,3 +182,10 @@ $ pre-commit run --all-files
 
 [readthedocs.org]: https://docs.readthedocs.io/en/stable/intro/import-guide.html
 [PR previews]: https://docs.readthedocs.io/en/stable/guides/pull-requests.html
+
+---
+
+<!-- _color: var(--color-accent) -->
+<!-- _backgroundColor: black -->
+
+# Thank you
