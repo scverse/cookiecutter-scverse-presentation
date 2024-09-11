@@ -10,7 +10,7 @@ style: |
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
-  a:link, a:visited {
+  a:any-link {
     --color-foreground: var(--color-highlight);
   }
 ---
