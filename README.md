@@ -240,6 +240,7 @@ $ pre-commit run --all-files
 
 ---
 
+<!-- _paginate: false -->
 <!-- _color: var(--color-accent) -->
 <!-- _backgroundColor: black -->
 
@@ -282,6 +283,7 @@ $ pre-commit run --all-files
 
 ---
 
+<!-- _paginate: false -->
 <!-- _color: var(--color-accent) -->
 <!-- _backgroundColor: black -->
 
