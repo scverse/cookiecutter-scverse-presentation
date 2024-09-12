@@ -40,10 +40,13 @@ cookiecutter-scverse-presentation][pres]
 
 ## Having impact with software
 
-* Aim of many academics: Publish papers and get citations
+* Publish papers and get citations for academic success
 * High quality software helps a lot with both
-* Being part of the scverse ecosystem ensures that you meet a set of minimum requirements for maximal impact
-* Goal of this workshop is to provide you a path to developing high quality software
+* Be part of the scverse ecosystem: ensure you meet minimum requirements for maximal impact
+  - Get reviewed by [PyOpenSci][]?
+* Workshop goal: path to high quality software dev
+
+[pyopensci]: https://www.pyopensci.org/
 
 ---
 
@@ -276,8 +279,9 @@ $ pre-commit run --all-files
 
 ## Step 5: Submit to scverse ecosystem
 
-* Follow the [instructions][scverse ecosystem repository]
-* Submit a pull request
+1) Follow the [instructions][scverse ecosystem repository]
+2) Submit a pull request
+3) Maybe get reviewed by [PyOpenSci][]
 
 ![bg right:40% contain](./img/scverse-ecosystem-pr.png)
 
