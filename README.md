@@ -122,7 +122,7 @@ $ hatch run docs:open
 $ hatch run docs:clean
 ```
 
-See `pyproject.toml`:
+See <samp>pyproject.toml</samp>:
 
 ```toml
 [tools.hatch.envs.docs]
@@ -156,6 +156,28 @@ CLI: `pre-commit` (or `hatch run pre-commit`)
 $ pre-commit install # `git commit` hook
 $ pre-commit run --all-files
 ```
+
+---
+
+# existing project
+
+* simple project
+
+  1. instantiate template
+  2. replace <samp>src/</samp> directory with your package
+  3. edit `[project]` table in <samp>pyproject.toml</samp>
+
+* complex project
+
+  1. Step by step PRs: formatter, …
+  2. We can help!
+
+---
+
+<!-- _color: var(--color-accent) -->
+<!-- _backgroundColor: black -->
+
+# follow along
 
 ---
 
