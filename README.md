@@ -20,6 +20,9 @@ style: |
 ---
 
 <!-- _paginate: skip -->
+
+<!-- Header link: important! -->
+<!-- Follow along if you’re quick, later interactive -->
 <!-- QR URL: https://api.qrserver.com/v1/create-qr-code/?format=svg&data=https://scverse.org/cookiecutter-scverse-presentation/ -->
 
 ![bg right:33% vertical 70%](./img/scverse-logo.svg)
@@ -122,7 +125,7 @@ $ hatch run docs:open
 $ hatch run docs:clean
 ```
 
-See `pyproject.toml`:
+See <samp>pyproject.toml</samp>:
 
 ```toml
 [tools.hatch.envs.docs]
@@ -156,6 +159,30 @@ CLI: `pre-commit` (or `hatch run pre-commit`)
 $ pre-commit install # `git commit` hook
 $ pre-commit run --all-files
 ```
+
+---
+
+# existing project
+
+<!-- simple: pure-python, one package -->
+
+* Simple project
+
+  1. Instantiate template
+  2. Replace <samp>src/*</samp> directory with your package
+  3. Edit `[project]` table in <samp>pyproject.toml</samp>
+
+* Complex project
+
+  1. Step by step PRs: formatter, …
+  2. We can help!
+
+---
+
+<!-- _color: var(--color-accent) -->
+<!-- _backgroundColor: black -->
+
+# follow along
 
 ---
 
