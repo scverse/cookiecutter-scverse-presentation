@@ -166,13 +166,13 @@ $ pre-commit run --all-files
 
 <!-- simple: pure-python, one package -->
 
-* simple project
+* Simple project
 
-  1. instantiate template
-  2. replace <samp>src/*</samp> directory with your package
-  3. edit `[project]` table in <samp>pyproject.toml</samp>
+  1. Instantiate template
+  2. Replace <samp>src/*</samp> directory with your package
+  3. Edit `[project]` table in <samp>pyproject.toml</samp>
 
-* complex project
+* Complex project
 
   1. Step by step PRs: formatter, …
   2. We can help!
