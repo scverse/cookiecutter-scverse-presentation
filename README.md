@@ -149,12 +149,12 @@ Hatch envs [basic usage][hatch envs]:
 $ hatch run [env:]command [...args] # e.g. `… docs:build -T`
 $ hatch test [...args]
 $ hatch env remove <name> # or `hatch env prune` for all
-$ hatch find hatch-test
+$ hatch env find hatch-test
 ~/.local/share/hatch/env/virtual/myproj/FsejNibV/hatch-test.py3.12
 […]
 ```
 
-Tell VS Code:
+Make sure it exists, then tell VS Code:
 
 <kbd>⌘</kbd>|<kbd>^</kbd>+<kbd>⇑</kbd>+<kbd>P</kbd> → <kbd>Python: Select Interpreter</kbd>
 
