@@ -35,7 +35,67 @@ cookiecutter-scverse-presentation][pres]
 
 ---
 
-# tool installs
+# Having impact with software
+
+* Aim of many academics: Publish papers and get citations
+* High quality software helps a lot with both
+* Being part of the scverse ecosystem ensures that you meet a set of minimum requirements for maximal impact
+* Goal of this workshop is to provide you a path to developing high quality software
+
+---
+
+# scverse ecosystem
+
+* Set of packages built around the scverse core packages
+* Featured on our website: [`scverse ecosystem`][]
+
+![bg right:40% contain](./img/scverse-ecosystem-overview.png)
+
+---
+
+# scverse ecosystem requirements
+
+* Name, description, ...
+* OSI-approved license
+* Versioned releases that can be installed from a standard registry (PyPI, Conda, ...)
+* Automated tests (executed via continuous integration)
+* API and use-case documentation
+* Uses scverse datastructures where appropriate
+
+---
+
+# How to get into the scverse ecosystem
+
+* Instructions to add your package are on the [`scverse ecosystem repository`][]
+* Either submit existing package
+* Easier alternative: [`scverse cookiecutter template`][]
+
+---
+
+# scverse cookiecutter template
+
+* Project template for scverse packages
+* Provides a best practice structure
+* Many features such as continuous integration, documentation setup, [...]
+* Ensures that you automatically tick all scverse ecosystem requirements
+
+---
+
+# Steps
+
+1. Set up global environment to create project
+2. Create project using [`scverse cookiecutter template`][]
+3. Set up project specific development environment
+4. Develop your package
+5. Submit to [`scverse ecosystem`][]
+
+---
+
+[`scverse ecosystem repository`]: https://github.com/scverse/ecosystem-packages
+[`scverse ecosystem`]: https://scverse.org/packages/#ecosystem
+[`scverse cookiecutter template`]: https://github.com/scverse/cookiecutter-scverse
+
+# Step 1: Global environment
 
 * Install using a package manager or installer:
 
@@ -59,7 +119,7 @@ cookiecutter-scverse-presentation][pres]
 
 ---
 
-# creating the project
+# Step 2: Creating the project
 
 ```console
 $ cruft create https://github.com/scverse/cookiecutter-scverse
@@ -72,7 +132,7 @@ $ code myproj
 
 ---
 
-# environment management
+# Step 3: Environment management
 
 Hatch envs [basic usage][hatch envs]:
 
@@ -159,7 +219,7 @@ $ pre-commit run --all-files
 
 ---
 
-# committing code
+# Step 4: committing code
 
 <!-- No need to do this live, time should be mostly up here -->
 
@@ -182,6 +242,15 @@ $ pre-commit run --all-files
 
 [readthedocs.org]: https://docs.readthedocs.io/en/stable/intro/import-guide.html
 [PR previews]: https://docs.readthedocs.io/en/stable/guides/pull-requests.html
+
+---
+
+# Step 5: Submit to scverse ecosystem
+
+* Instructions: [`scverse ecosystem repository`][]
+* Submit a pull request
+
+![bg right:40% contain](./img/scverse-ecosystem-pr.png)
 
 ---
 
