@@ -38,7 +38,73 @@ cookiecutter-scverse-presentation][pres]
 
 ---
 
-# tool installs
+## having impact with software
+
+* Publish papers and get citations for academic success
+* High quality software helps a lot with both
+* Be part of the scverse ecosystem: ensure you meet minimum requirements for maximal impact
+  - Get reviewed by [PyOpenSci][]?
+* Workshop goal: path to high quality software dev
+
+[pyopensci]: https://www.pyopensci.org/
+
+---
+
+## scverse ecosystem
+
+* Set of packages built around the scverse core packages
+* Featured on the [scverse ecosystem][] website
+
+![bg right:40% contain](./img/scverse-ecosystem-overview.png)
+
+[scverse ecosystem]: https://scverse.org/packages/#ecosystem
+
+---
+
+### scverse ecosystem requirements
+
+* Metadata: name, description, OSI-approved license, ...
+* Versioned releases installable from PyPI &/or Conda
+* Tests automated via continuous integration (CI)
+* Docs for API and use-cases
+* Scverse datastructures used where appropriate
+
+---
+
+### how to get into the scverse ecosystem
+
+Instructions to add your package are on the [scverse ecosystem repository][]
+
+- Submit existing package, or
+- Easiest way: [scverse cookiecutter template][]
+
+[scverse ecosystem repository]: https://github.com/scverse/ecosystem-packages
+[scverse cookiecutter template]: https://github.com/scverse/cookiecutter-scverse
+
+---
+
+## scverse cookiecutter template
+
+* Project template for scverse packages¹
+* Best practice structure
+* Many features such as continuous integration, documentation setup, …
+* Automatically ticks all scverse ecosystem requirements
+
+¹Much is applicable elsewhere
+
+---
+
+# steps
+
+1. Set up global environment to create project
+2. Create project using [scverse cookiecutter template][]
+3. Set up project specific development environment
+4. Develop your package
+5. Submit to [scverse ecosystem][]
+
+---
+
+## step 1: global environment
 
 * Install using a package manager or installer:
 
@@ -62,7 +128,7 @@ cookiecutter-scverse-presentation][pres]
 
 ---
 
-# creating the project
+## step 2: creating the project
 
 ```console
 $ cruft create https://github.com/scverse/cookiecutter-scverse
@@ -75,7 +141,7 @@ $ code myproj
 
 ---
 
-# environment management
+## step 3: environment management
 
 Hatch envs [basic usage][hatch envs]:
 
@@ -96,7 +162,7 @@ Tell VS Code:
 
 ---
 
-# running tests
+### running tests
 
 ```console
 $ hatch test --help
@@ -117,7 +183,7 @@ Options:
 
 ---
 
-# building docs
+### building docs
 
 ```console
 $ hatch run docs:build
@@ -137,7 +203,7 @@ scripts.build = "..."
 
 ---
 
-# formatting and linting
+### formatting and linting
 
 VS Code:
 
@@ -162,7 +228,7 @@ $ pre-commit run --all-files
 
 ---
 
-# existing project
+### existing project
 
 <!-- simple: pure-python, one package -->
 
@@ -179,6 +245,7 @@ $ pre-commit run --all-files
 
 ---
 
+<!-- _paginate: false -->
 <!-- _color: var(--color-accent) -->
 <!-- _backgroundColor: black -->
 
@@ -186,7 +253,7 @@ $ pre-commit run --all-files
 
 ---
 
-# committing code
+## step 4: committing code
 
 <!-- No need to do this live, time should be mostly up here -->
 
@@ -201,7 +268,7 @@ $ pre-commit run --all-files
 
 ---
 
-# ReadTheDocs
+### ReadTheDocs
 
 - Set up [readthedocs.org][] and its [PR previews][]:
 
@@ -212,7 +279,18 @@ $ pre-commit run --all-files
 
 ---
 
+## step 5: submit to scverse ecosystem
+
+1) Follow the [instructions][scverse ecosystem repository]
+2) Submit a pull request
+3) Maybe get reviewed by [PyOpenSci][]
+
+![bg right:40% contain](./img/scverse-ecosystem-pr.png)
+
+---
+
+<!-- _paginate: false -->
 <!-- _color: var(--color-accent) -->
 <!-- _backgroundColor: black -->
 
-# Thank you
+# Thank You!
