@@ -20,6 +20,9 @@ style: |
 ---
 
 <!-- _paginate: skip -->
+
+<!-- Header link: important! -->
+<!-- Follow along if you’re quick, later interactive -->
 <!-- QR URL: https://api.qrserver.com/v1/create-qr-code/?format=svg&data=https://scverse.org/cookiecutter-scverse-presentation/ -->
 
 ![bg right:33% vertical 70%](./img/scverse-logo.svg)
@@ -161,10 +164,12 @@ $ pre-commit run --all-files
 
 # existing project
 
+<!-- simple: pure-python, one package -->
+
 * simple project
 
   1. instantiate template
-  2. replace <samp>src/</samp> directory with your package
+  2. replace <samp>src/*</samp> directory with your package
   3. edit `[project]` table in <samp>pyproject.toml</samp>
 
 * complex project
