@@ -28,7 +28,7 @@ style: |
 ![bg right:33% vertical 70%](./img/scverse-logo.svg)
 ![bg right:33% vertical 60%](./img/qr-pres.svg)
 
-# [scverse cookiecutter template][template]
+# [scverse® cookiecutter template][template]
 
 Follow along: [scverse.org/
 cookiecutter-scverse-presentation][pres]
