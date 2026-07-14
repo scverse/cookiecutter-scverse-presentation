@@ -4,6 +4,6 @@ repos:
     hooks:
       - id: trailing-whitespace
   - repo: https://github.com/biomejs/pre-commit
-    rev: v2.5.2
+    rev: v2.5.3
     hooks:
       - id: biome-format
