@@ -1,23 +1,22 @@
 ---
-
 marp: true
 theme: uncover
 paginate: true
 #backgroundColor: #fff
 backgroundImage: radial-gradient(circle 100vh at bottom 100px right 100px in hsl, var(--color-accent) 0%, transparent 100%)
 style: |
-:root {
---color-highlight: #0097a7;
---color-accent: rgb(161, 186, 182);
-}
-a:any-link {
---color-foreground: var(--color-highlight);
-}
-.columns {
-display: grid;
-grid-template-columns: repeat(2, minmax(0, 1fr));
-gap: 1rem;
-}
+    :root {
+      --color-highlight: #0097a7;
+      --color-accent: rgb(161, 186, 182);
+    }
+    a:any-link {
+      --color-foreground: var(--color-highlight);
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
 ---
 
 <!-- _paginate: skip -->
