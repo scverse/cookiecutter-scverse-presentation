@@ -5,18 +5,18 @@ paginate: true
 #backgroundColor: #fff
 backgroundImage: radial-gradient(circle 100vh at bottom 100px right 100px in hsl, var(--color-accent) 0%, transparent 100%)
 style: |
-  :root {
-    --color-highlight: #0097a7;
-    --color-accent: rgb(161, 186, 182);
-  }
-  a:any-link {
-    --color-foreground: var(--color-highlight);
-  }
-  .columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-  }
+    :root {
+      --color-highlight: #0097a7;
+      --color-accent: rgb(161, 186, 182);
+    }
+    a:any-link {
+      --color-foreground: var(--color-highlight);
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
 ---
 
 <!-- _paginate: skip -->
@@ -40,11 +40,11 @@ cookiecutter-scverse-presentation][pres]
 
 ## having impact with software
 
-* Publish papers and get citations for academic success
-* High quality software helps a lot with both
-* Be part of the scverse ecosystem: ensure you meet minimum requirements for maximal impact
+- Publish papers and get citations for academic success
+- High quality software helps a lot with both
+- Be part of the scverse ecosystem: ensure you meet minimum requirements for maximal impact
   - Get reviewed by [PyOpenSci][]?
-* Workshop goal: path to high quality software dev
+- Workshop goal: path to high quality software dev
 
 [pyopensci]: https://www.pyopensci.org/
 
@@ -52,8 +52,8 @@ cookiecutter-scverse-presentation][pres]
 
 ## scverse ecosystem
 
-* Set of packages built around the scverse core packages
-* Featured on the [scverse ecosystem][] website
+- Set of packages built around the scverse core packages
+- Featured on the [scverse ecosystem][] website
 
 ![bg right:40% contain](./img/scverse-ecosystem-overview.png)
 
@@ -63,11 +63,11 @@ cookiecutter-scverse-presentation][pres]
 
 ### scverse ecosystem requirements
 
-* Metadata: name, description, OSI-approved license, ...
-* Versioned releases installable from PyPI &/or Conda
-* Tests automated via continuous integration (CI)
-* Docs for API and use-cases
-* Scverse datastructures used where appropriate
+- Metadata: name, description, OSI-approved license, ...
+- Versioned releases installable from PyPI &/or Conda
+- Tests automated via continuous integration (CI)
+- Docs for API and use-cases
+- Scverse datastructures used where appropriate
 
 ---
 
@@ -85,10 +85,10 @@ Instructions to add your package are on the [scverse ecosystem repository][]
 
 ## scverse cookiecutter template
 
-* Project template for scverse packages¹
-* Best practice structure
-* Many features such as continuous integration, documentation setup, …
-* Automatically ticks all scverse ecosystem requirements
+- Project template for scverse packages¹
+- Best practice structure
+- Many features such as continuous integration, documentation setup, …
+- Automatically ticks all scverse ecosystem requirements
 
 ¹Much is applicable elsewhere
 
@@ -106,13 +106,11 @@ Instructions to add your package are on the [scverse ecosystem repository][]
 
 ## step 1: global environment
 
-* Install using a package manager or installer:
-
+- Install using a package manager or installer:
   - [`code`][], [`hatch`][], & [`git`][]
   - [`uv`][] or [`pipx`][]
 
-* Install using a package manager, `pipx`, or `uv`:
-
+- Install using a package manager, `pipx`, or `uv`:
   - `cruft` & `pre-commit`
 
     ```console
@@ -232,14 +230,12 @@ $ pre-commit run --all-files
 
 <!-- simple: pure-python, one package -->
 
-* Simple project
-
+- Simple project
   1. Instantiate template
   2. Replace <samp>src/*</samp> directory with your package
   3. Edit `[project]` table in <samp>pyproject.toml</samp>
 
-* Complex project
-
+- Complex project
   1. Step by step PRs: formatter, …
   2. We can help!
 
@@ -281,9 +277,9 @@ $ pre-commit run --all-files
 
 ## step 5: submit to scverse ecosystem
 
-1) Follow the [instructions][scverse ecosystem repository]
-2) Submit a pull request
-3) Maybe get reviewed by [PyOpenSci][]
+1. Follow the [instructions][scverse ecosystem repository]
+2. Submit a pull request
+3. Maybe get reviewed by [PyOpenSci][]
 
 ![bg right:40% contain](./img/scverse-ecosystem-pr.png)
 

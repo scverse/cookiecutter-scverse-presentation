@@ -3,7 +3,7 @@ concurrency: marp-to-pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
     types:
       - opened
@@ -17,7 +17,6 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-
       - uses: actions/checkout@v4
 
       - name: Ensure build dir exists
