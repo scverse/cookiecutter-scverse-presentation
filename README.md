@@ -36,7 +36,7 @@ cookiecutter-scverse-presentation][pres]
 [template]: https://cookiecutter-scverse-instance.readthedocs.io/en/latest/template_usage.html
 [pres]: https://scverse.org/cookiecutter-scverse-presentation/
 
----
+--------------------------------------------------------------------------------
 
 ## having impact with software
 
@@ -48,7 +48,7 @@ cookiecutter-scverse-presentation][pres]
 
 [pyopensci]: https://www.pyopensci.org/
 
----
+--------------------------------------------------------------------------------
 
 ## scverse ecosystem
 
@@ -59,7 +59,7 @@ cookiecutter-scverse-presentation][pres]
 
 [scverse ecosystem]: https://scverse.org/packages/#ecosystem
 
----
+--------------------------------------------------------------------------------
 
 ### scverse ecosystem requirements
 
@@ -69,7 +69,7 @@ cookiecutter-scverse-presentation][pres]
 - Docs for API and use-cases
 - Scverse datastructures used where appropriate
 
----
+--------------------------------------------------------------------------------
 
 ### how to get into the scverse ecosystem
 
@@ -81,7 +81,7 @@ Instructions to add your package are on the [scverse ecosystem repository][]
 [scverse ecosystem repository]: https://github.com/scverse/ecosystem-packages
 [scverse cookiecutter template]: https://github.com/scverse/cookiecutter-scverse
 
----
+--------------------------------------------------------------------------------
 
 ## scverse cookiecutter template
 
@@ -92,7 +92,7 @@ Instructions to add your package are on the [scverse ecosystem repository][]
 
 ¹Much is applicable elsewhere
 
----
+--------------------------------------------------------------------------------
 
 # steps
 
@@ -102,7 +102,7 @@ Instructions to add your package are on the [scverse ecosystem repository][]
 4. Develop your package
 5. Submit to [scverse ecosystem][]
 
----
+--------------------------------------------------------------------------------
 
 ## step 1: global environment
 
@@ -124,7 +124,7 @@ Instructions to add your package are on the [scverse ecosystem repository][]
 [`uv`]: https://docs.astral.sh/uv/getting-started/installation/
 [`pipx`]: https://pipx.pypa.io/stable/installation/
 
----
+--------------------------------------------------------------------------------
 
 ## step 2: creating the project
 
@@ -137,7 +137,7 @@ $ code myproj
 
 <img style="margin-bottom: -450px" src=./img/new-proj.png>
 
----
+--------------------------------------------------------------------------------
 
 ## step 3: environment management
 
@@ -158,7 +158,7 @@ Make sure it exists, then tell VS Code:
 
 [hatch envs]: https://hatch.pypa.io/latest/tutorials/environment/basic-usage/
 
----
+--------------------------------------------------------------------------------
 
 ### running tests
 
@@ -179,7 +179,7 @@ Options:
 
 ![bg right:40% contain](./img/test-explorer.png)
 
----
+--------------------------------------------------------------------------------
 
 ### building docs
 
@@ -199,7 +199,7 @@ scripts.build = "..."
 
 ![bg right:40% contain](./img/docs.png)
 
----
+--------------------------------------------------------------------------------
 
 ### formatting and linting
 
@@ -224,7 +224,7 @@ $ pre-commit install # `git commit` hook
 $ pre-commit run --all-files
 ```
 
----
+--------------------------------------------------------------------------------
 
 ### existing project
 
@@ -239,7 +239,7 @@ $ pre-commit run --all-files
   1. Step by step PRs: formatter, …
   2. We can help!
 
----
+--------------------------------------------------------------------------------
 
 <!-- _paginate: false -->
 <!-- _color: var(--color-accent) -->
@@ -247,7 +247,7 @@ $ pre-commit run --all-files
 
 # follow along
 
----
+--------------------------------------------------------------------------------
 
 ## step 4: committing code
 
@@ -262,7 +262,7 @@ $ pre-commit run --all-files
 [pre-commit.ci]: https://pre-commit.ci/
 [codecov.io]: https://codecov.io/
 
----
+--------------------------------------------------------------------------------
 
 ### ReadTheDocs
 
@@ -273,7 +273,7 @@ $ pre-commit run --all-files
 [readthedocs.org]: https://docs.readthedocs.io/en/stable/intro/import-guide.html
 [PR previews]: https://docs.readthedocs.io/en/stable/guides/pull-requests.html
 
----
+--------------------------------------------------------------------------------
 
 ## step 5: submit to scverse ecosystem
 
@@ -283,7 +283,7 @@ $ pre-commit run --all-files
 
 ![bg right:40% contain](./img/scverse-ecosystem-pr.png)
 
----
+--------------------------------------------------------------------------------
 
 <!-- _paginate: false -->
 <!-- _color: var(--color-accent) -->

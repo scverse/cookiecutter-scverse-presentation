@@ -1,7 +1,11 @@
 {
-    "[json][jsonc]": {
+    "[json][jsonc][yaml]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "biomejs.biome",
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "jolars.panache",
+        "editor.formatOnSave": true,
     },
     "markdown.marp.enableHtml": true,
     "markdown.marp.pdf.outlines": "headings",
